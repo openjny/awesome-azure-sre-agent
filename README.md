@@ -1,5 +1,9 @@
 # awesome-azure-sre-agent
 
+Azure SRE Agent は、Microsoft が提供する MCP（Microsoft Connected Partner）プラットフォームを活用した、SRE（Site Reliability Engineering）向けの自律型エージェントです。Azure SRE Agent を利用することで、インシデント対応や運用タスクの自動化を実現し、システムの信頼性と運用効率を向上させることができます。
+
+このリポジトリでは、Azure SRE Agent に関する公式ドキュメント、活用シナリオ、デモ動画、事例、リソース定義などをまとめています。Azure SRE Agent を導入・活用する際の参考資料としてご活用ください。
+
 ## 公式リンク集
 
 | タイトル | 説明 |
