@@ -1,11 +1,8 @@
-# awesome-azure-sre-agent
+# Awesome Azure SRE Agent
 
 > 🌐 [日本語版はこちら (Japanese)](README.ja.md)
 
-Azure SRE Agent is an autonomous SRE (Site Reliability Engineering) agent service optimized for systems running on Microsoft Azure. It enables automation of incident response and operational tasks, improving system reliability and operational efficiency.
-
 This repository collects official documentation, use case scenarios, demo videos, case studies, and resource definitions for Azure SRE Agent. Use it as a reference when adopting and utilizing Azure SRE Agent.
-
 
 **Table of Contents**
 
@@ -13,8 +10,8 @@ This repository collects official documentation, use case scenarios, demo videos
 - [🚀 Use Case Scenarios](#-use-case-scenarios)
 - [🔌 MCP Integration Guide](#-mcp-integration-guide)
 - [🎬 Demo Videos](#-demo-videos)
-- [�️ Demo Applications](#-demo-applications)
-- [�📣 Case Studies](#-case-studies)
+- [🖥️ Demo Applications](#-demo-applications)
+- [📣 Case Studies](#-case-studies)
 - [📚 Other Resources](#-other-resources)
 - [🛠️ Resource Definitions](#-resource-definitions)
 
@@ -30,7 +27,6 @@ This repository collects official documentation, use case scenarios, demo videos
   Operation guide on the portal
 - **[Azure MCP Center - Microsoft](https://mcp.azure.com/?vendors.microsoft=true)**  
   MCP servers provided by Microsoft
-
 
 ## 🚀 Use Case Scenarios
 
@@ -55,7 +51,6 @@ This repository collects official documentation, use case scenarios, demo videos
   Build a Subagent using Elasticsearch's Agent Builder MCP endpoint to perform natural language log search, ES|QL execution, and cluster health checks
 - **[MCP-Driven Azure SRE for Databricks](https://techcommunity.microsoft.com/blog/appsonazureblog/mcp-driven-azure-sre-for-databricks/4494630)**  
   Deploy Databricks MCP Server to Azure Container Apps for automated workspace best-practice compliance validation (Scheduled Task) and autonomous root-cause investigation and remediation of job failures (Incident Response)
-
 
 ## 🎬 Demo Videos
 

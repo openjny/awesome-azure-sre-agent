@@ -1,11 +1,8 @@
-# awesome-azure-sre-agent
+# Awesome Azure SRE Agent
 
 > 🌐 [English version (英語版)](README.md)
 
-Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SRE（Site Reliability Engineering）向け自律型エージェント サービスです。Azure SRE Agent を利用することで、インシデント対応や運用タスクの自動化を実現し、システムの信頼性と運用効率を向上させることができます。
-
-このリポジトリでは、Azure SRE Agent に関する公式ドキュメント、活用シナリオ、デモ動画、事例、リソース定義などをまとめています。Azure SRE Agent を導入・活用する際の参考資料としてご活用ください。
-
+このリポジトリは、Azure SRE Agent に関する公式ドキュメント、活用シナリオ、デモ動画、事例、リソース定義などをまとめています。Azure SRE Agent を導入・活用する際の参考資料としてご活用ください。
 
 **Table of Contents**
 
@@ -30,7 +27,6 @@ Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SR
   ポータル上の操作ガイド
 - **[Azure MCP Center - Microsoft](https://mcp.azure.com/?vendors.microsoft=true)**  
   Microsoft 提供の MCP サーバー
-
 
 ## 🚀 Use Case Scenarios / 活用シナリオ
 
@@ -58,7 +54,6 @@ Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SR
   Elasticsearch の Agent Builder MCP エンドポイントを使い、自然言語でログ検索・ES|QL 実行・クラスターヘルス確認を行う Subagent を構築する
 - **[MCP-Driven Azure SRE for Databricks](https://techcommunity.microsoft.com/blog/appsonazureblog/mcp-driven-azure-sre-for-databricks/4494630)**  
   Databricks MCP サーバーを Azure Container Apps にデプロイし、ワークスペースのベストプラクティス準拠を自動検証（Scheduled Task）したり、ジョブ障害の根本原因を自律調査・修復（Incident Response）する
-
 
 ## 🎬 Demo Videos / デモ動画
 
