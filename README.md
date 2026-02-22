@@ -13,7 +13,8 @@ This repository collects official documentation, use case scenarios, demo videos
 - [🚀 Use Case Scenarios](#-use-case-scenarios)
 - [🔌 MCP Integration Guide](#-mcp-integration-guide)
 - [🎬 Demo Videos](#-demo-videos)
-- [📣 Case Studies](#-case-studies)
+- [�️ Demo Applications](#-demo-applications)
+- [�📣 Case Studies](#-case-studies)
 - [📚 Other Resources](#-other-resources)
 - [🛠️ Resource Definitions](#-resource-definitions)
 
@@ -63,6 +64,11 @@ This repository collects official documentation, use case scenarios, demo videos
 - **[Proactive .NET Reliability with Azure SRE Agent](https://www.youtube.com/watch?v=Kx_6SB-mhgg)**  
   Using an ASP.NET app, demonstrates proactive reliability improvement by detecting and fixing issues before incident reports come in
 
+## 🖥️ Demo Applications / Environments
+
+- **[azure-sre-agent-demokit (ussvgr/GitHub)](https://github.com/ussvgr/azure-sre-agent-demokit)**  
+  A kit for bulk provisioning Azure SRE Agent demo environments with Terraform. Creates a .NET Blazor demo app, Application Insights alerts, and SRE Agent resources together
+
 ## 📣 Case Studies
 
 - **[Future of Incident Response with Azure SRE Agent x PagerDuty (AEON Smart Technology / AEON TECH HUB #23)](https://speakerdeck.com/aeonpeople/the-future-of-incident-response-azure-sre-agent-x-pagerduty)**  
@@ -70,8 +76,6 @@ This repository collects official documentation, use case scenarios, demo videos
 
 ## 📚 Other Resources
 
-- **[azure-sre-agent-demokit (ussvgr/GitHub)](https://github.com/ussvgr/azure-sre-agent-demokit)**  
-  A kit for bulk provisioning Azure SRE Agent demo environments with Terraform. Creates a .NET Blazor demo app, Application Insights alerts, and SRE Agent resources together
 - **[Context Engineering Lessons from Building Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/context-engineering-lessons-from-building-azure-sre-agent/4481200/)**  
   Lessons in context engineering from the SRE Agent development team covering tool design, multi-agent, code execution, and compaction
 - **[Reactive Incident Response with Azure SRE Agent: From Alert to Resolution in Minutes](https://techcommunity.microsoft.com/blog/azurearchitectureblog/reactive-incident-response-with-azure-sre-agent-from-alert-to-resolution-in-minu/4492938)**  
