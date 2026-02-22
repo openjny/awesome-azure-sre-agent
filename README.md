@@ -31,6 +31,18 @@ Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SR
 - **[Azure SRE Agent が利用可能に！ 仮想マシンを調査してもらった（Zenn / Microsoft 有志）](https://zenn.dev/microsoft/articles/sreagent-getstart)**  
   VM の CPU 高負荷シナリオで SRE Agent を試した入門レポート。作成手順・調査フロー・権限設定・日本語対応などを実演を交えて紹介
 
+## MCP 連携ガイド
+
+- **[How to Connect Azure SRE Agent to Azure MCP](https://techcommunity.microsoft.com/blog/appsonazureblog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905)**  
+  Azure MCP サーバーを使用して、ネイティブの az コマンドとは異なる方法で Azure リソースを操作する
+- **[Get started with Dynatrace MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-dynatrace-mcp-server-in-azure-sre-agent/4492363)**  
+  Dynatrace MCP サーバーを使用して、Dynatrace の機能（DQL クエリ、問題調査、セキュリティ脆弱性分析、時系列予測など）を SRE Agent から実行する
+- **[Get started with Elasticsearch MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-elasticsearch-mcp-server-in-azure-sre-agent/4492896)**  
+  Elasticsearch の Agent Builder MCP エンドポイントを使い、自然言語でログ検索・ES|QL 実行・クラスターヘルス確認を行う Subagent を構築する
+- **[MCP-Driven Azure SRE for Databricks](https://techcommunity.microsoft.com/blog/appsonazureblog/mcp-driven-azure-sre-for-databricks/4494630)**  
+  Databricks MCP サーバーを Azure Container Apps にデプロイし、ワークスペースのベストプラクティス準拠を自動検証（Scheduled Task）したり、ジョブ障害の根本原因を自律調査・修復（Incident Response）する
+
+
 ## デモ動画
 
 - **[Proactive .NET Reliability with Azure SRE Agent](https://www.youtube.com/watch?v=Kx_6SB-mhgg)**  
