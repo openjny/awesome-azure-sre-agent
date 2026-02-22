@@ -10,7 +10,7 @@ This repository collects official documentation, use case scenarios, demo videos
 - [🚀 Use Case Scenarios](#-use-case-scenarios)
 - [🔌 MCP Integration Guide](#-mcp-integration-guide)
 - [🎬 Demo Videos](#-demo-videos)
-- [🖥️ Demo Applications](#-demo-applications)
+- [🧪 Lab Environments](#-lab-environments)
 - [📣 Case Studies](#-case-studies)
 - [📚 Other Resources](#-other-resources)
 - [🛠️ Resource Definitions](#-resource-definitions)
@@ -59,10 +59,16 @@ This repository collects official documentation, use case scenarios, demo videos
 - **[Proactive .NET Reliability with Azure SRE Agent](https://www.youtube.com/watch?v=Kx_6SB-mhgg)**  
   Using an ASP.NET app, demonstrates proactive reliability improvement by detecting and fixing issues before incident reports come in
 
-## 🖥️ Demo Applications / Environments
+## 🧪 Lab Environments
 
 - **[azure-sre-agent-demokit (ussvgr/GitHub)](https://github.com/ussvgr/azure-sre-agent-demokit)**  
   A kit for bulk provisioning Azure SRE Agent demo environments with Terraform. Creates a .NET Blazor demo app, Application Insights alerts, and SRE Agent resources together
+- **[azure-sre-agent-demo (jiratouchmhp/GitHub)](https://github.com/jiratouchmhp/azure-sre-agent-demo)**  
+  Hands-on demo environment with a multi-tier app (React + .NET 8 + PostgreSQL), intentional security/cost/availability issues, and scripts to trigger live incidents for customer presentations
+- **[azure-sre-agent-sandbox (matthansen0/GitHub)](https://github.com/matthansen0/azure-sre-agent-sandbox)**  
+  AKS-based demo lab with 10 breakable scenarios (OOMKilled, CrashLoop, NetworkBlock, etc.), full observability stack, and ready-to-use scripts for deployment and teardown
+- **[azure-sre-agent (pelithne/GitHub)](https://github.com/pelithne/azure-sre-agent)**  
+  Tools for simulating errors and load testing in AKS clusters. Includes a configurable memory leak Python app and nginx deployment for testing SRE Agent diagnosis
 
 ## 📣 Case Studies
 
