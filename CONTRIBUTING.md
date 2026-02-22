@@ -1,85 +1,98 @@
 # Contributing Guide
 
-このリポジトリへの貢献を歓迎します。  
-貢献の種類や手順を以下にまとめています。
+Contributions to this repository are welcome.  
+Below is a summary of contribution types and procedures.
 
-## 貢献できること
+## What You Can Contribute
 
-| 種類 | 内容 |
-|------|------|
-| **リンク追記** | README の各セクションへの公式ドキュメント・ブログ・事例リンクの追加 |
-| **ドキュメント記事** | `docs/` 配下へのシナリオ解説・TIPS の追加 |
-| **リソース定義** | `resources/` 配下への Subagent / Skill / Connector / Tool サンプルの追加 |
-| **誤記・リンク切れ修正** | 既存コンテンツの修正 |
+| Type | Description |
+|------|-------------|
+| **Add links** | Add official documentation, blog, or case study links to README sections |
+| **Documentation articles** | Add scenario explanations or tips under `docs/` |
+| **Resource definitions** | Add Subagent / Skill / Connector / Tool samples under `resources/` |
+| **Fix typos or broken links** | Fix issues in existing content |
 
-## ディレクトリ構成
+## Directory Structure
 
 ```text
 awesome-azure-sre-agent/
 ├── docs/
-│   └── <title>.md       # README にフィットしないが有用な TIP など
+│   └── <title>.md       # Useful tips that don't fit directly in README
 ├── resources/
-│   ├── subagents/       # Subagent 設定サンプル
-│   ├── skills/          # Skill 定義サンプル
-│   ├── connectors/      # Connector 設定サンプル
+│   ├── subagents/       # Subagent configuration samples
+│   ├── skills/          # Skill definition samples
+│   ├── connectors/      # Connector configuration samples
 │   └── tools/
-│       ├── python/      # Python スクリプト
-│       └── kql/         # KQL クエリ
+│       ├── python/      # Python scripts
+│       └── kql/         # KQL queries
 └── README.md
 ```
 
-**重要**: `docs/` は人間が読む記事・解説、`resources/` は実際に使えるリソースファイルです。混在させないでください。
+**Important**: `docs/` is for human-readable articles and explanations. `resources/` is for actual usable resource files. Do not mix them.
 
-## Pull Request の手順
+## Pull Request Steps
 
-1. このリポジトリを Fork する
-2. ブランチを切る（例: `feature/add-incident-response-scenario`）
-3. 変更を加えてコミットする
-4. Pull Request を作成する
+1. Fork this repository
+2. Create a branch (e.g., `feature/add-incident-response-scenario`)
+3. Make your changes and commit
+4. Open a Pull Request
 
-## コンテンツごとの規約
+## Content Conventions
 
-### README へのリンク追記
+### README language policy
 
-- 適切なセクションに追記する
-- 形式: `**[タイトル](URL)**` の後に 1〜2 行の日本語説明
-- 重複リンクがないか確認する
+- `README.md`: **English-audience content only.** Add a link or article here only if it is primarily written for English-speaking or global audiences. Simply translating a description does not make locale-specific content eligible for `README.md`.
+- `README.<locale>.md`: **Locale-audience content.** Add content written for that locale's audience here. Items shared with `README.md` (global content) are also listed here in bilingual form (English + locale language).
 
-### ドキュメント記事 (`docs/`)
+When adding new content, always check the **intended audience language** of the source material first, then decide which README(s) it belongs in:
 
-- 言語は日本語ベース（技術用語・固有名詞は英語を併記可）
-- 1 ファイル = 1 シナリオ・TIPS
-- ファイル名: kebab-case（例: `ssl-certificate-monitor.md`）
-- 記事には以下を含める:
-  - 目的・ユースケース
-  - 前提条件
-  - 手順
-  - ポイント・注意事項
+| Source material language | Add to `README.md` | Add to `README.<locale>.md` |
+|---|---|---|
+| English / global | Yes | Yes (bilingual) |
+| Locale-specific only | No | Yes |
+
+### Adding links to README
+
+- Add to the appropriate section
+- Format for `README.md`: `**[Title](URL)**` followed by 1–2 lines of **English** description
+- Format for `README.<locale>.md`: follow the English description with the locale language description on the next line (bilingual)
+- Check for duplicate links before adding
+
+### Documentation articles (`docs/`)
+
+- Language: English-based (Japanese may be used alongside for locale-specific content)
+- 1 file = 1 scenario or tip
+- File name: kebab-case (e.g., `ssl-certificate-monitor.md`)
+- Articles should include:
+  - Purpose and use case
+  - Prerequisites
+  - Steps
+  - Key points and notes
 
 ### Subagent / Skill / Connector (`resources/`)
 
-- 1 ディレクトリ = 1 リソース
-- 各ディレクトリに `README.md` を必ず含める（目的・前提条件・使い方）
-- ファイル構成:
+- 1 directory = 1 resource
+- Each directory must include a `README.md` (purpose, prerequisites, and usage)
+- File structure:
   - Subagent: `{name}/README.md`, `{name}/{name}.yaml`
   - Skill: `{name}/README.md`, `{name}/{name}.yaml`
   - Connector: `{name}/README.md`, `{name}/connector.yaml`
-- **機密情報（API キー・パスワード等）は絶対にコミットしない**。プレースホルダー `<YOUR_API_KEY>` を使用する
+- **Never commit sensitive information (API keys, passwords, etc.)**. Use the placeholder `<YOUR_API_KEY>`
 
 ### Tools (`resources/tools/`)
 
-- **Python スクリプト** (`python/*.py`):
-  - 単体で実行可能な形式にする
-  - ファイル冒頭のコメントに用途・引数・前提パッケージを記載する
-- **KQL クエリ** (`kql/*.kql`):
-  - ファイル冒頭のコメントにクエリの目的・対象テーブルを記載する
+- **Python scripts** (`python/*.py`):
+  - Must be standalone executable
+  - Include a comment block at the top with purpose, arguments, and required packages
+- **KQL queries** (`kql/*.kql`):
+  - Include a comment at the top with the query's purpose and target table
 
-## セキュリティに関する注意
+## Security Notes
 
-- シークレット・認証情報・個人情報をコミットしない
-- サブスクリプション ID・テナント ID などの固有情報はプレースホルダーに置き換える
-- セキュリティの脆弱性を発見した場合は Issue ではなく、リポジトリオーナーに直接連絡する
+- Do not commit secrets, credentials, or personal information
+- Replace environment-specific values such as subscription IDs and tenant IDs with placeholders
+- If you discover a security vulnerability, contact the repository owner directly rather than opening an Issue
 
-## ライセンス
+## License
 
-このリポジトリは [MIT License](LICENSE) のもとで公開されています。貢献いただいたコンテンツも同ライセンスが適用されます。
+This repository is published under the [MIT License](LICENSE). Contributed content is subject to the same license.

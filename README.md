@@ -1,84 +1,83 @@
 # awesome-azure-sre-agent
 
-Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SRE（Site Reliability Engineering）向け自律型エージェント サービスです。Azure SRE Agent を利用することで、インシデント対応や運用タスクの自動化を実現し、システムの信頼性と運用効率を向上させることができます。
+> 🌐 [日本語版はこちら (Japanese)](README.ja.md)
 
-このリポジトリでは、Azure SRE Agent に関する公式ドキュメント、活用シナリオ、デモ動画、事例、リソース定義などをまとめています。Azure SRE Agent を導入・活用する際の参考資料としてご活用ください。
+Azure SRE Agent is an autonomous SRE (Site Reliability Engineering) agent service optimized for systems running on Microsoft Azure. It enables automation of incident response and operational tasks, improving system reliability and operational efficiency.
+
+This repository collects official documentation, use case scenarios, demo videos, case studies, and resource definitions for Azure SRE Agent. Use it as a reference when adopting and utilizing Azure SRE Agent.
 
 
-> **目次**
-> 
-> - [🔗 公式リンク集](#-公式リンク集)
-> - [🚀 活用シナリオ](#-活用シナリオ)
-> - [🔌 MCP 連携ガイド](#-mcp-連携ガイド)
-> - [🎬 デモ動画](#-デモ動画)
-> - [📣 事例](#-事例)
-> - [📚 その他](#-その他)
-> - [🛠️ リソース定義](#️-リソース定義)
+**Table of Contents**
 
-## 🔗 公式リンク集
+- [🔗 Official Links](#-official-links)
+- [🚀 Use Case Scenarios](#-use-case-scenarios)
+- [🔌 MCP Integration Guide](#-mcp-integration-guide)
+- [🎬 Demo Videos](#-demo-videos)
+- [📣 Case Studies](#-case-studies)
+- [📚 Other Resources](#-other-resources)
+- [🛠️ Resource Definitions](#-resource-definitions)
 
-- ⭐ **[Azure SRE Agent 概要](https://learn.microsoft.com/azure/sre-agent/overview)**  
-  公式ドキュメント
-- ⭐ **[Azure SRE Agent タグ - Microsoft Tech Community](https://techcommunity.microsoft.com/tag/azure%20sre%20agent)**  
-  公式ブログ記事・コミュニティ投稿のまとめ
+## 🔗 Official Links
+
+- ⭐ **[Azure SRE Agent Overview](https://learn.microsoft.com/azure/sre-agent/overview)**  
+  Official documentation
+- ⭐ **[Azure SRE Agent tag - Microsoft Tech Community](https://techcommunity.microsoft.com/tag/azure%20sre%20agent)**  
+  Official blog posts and community contributions
 - ⭐ **[microsoft/sre-agent](https://github.com/microsoft/sre-agent)**  
-  バグ報告・フィードバック・Subagent サンプル集
-- **[Azure SRE Agent ポータル ドキュメント](https://sre.azure.com/docs/overview)**  
-  ポータル上の操作ガイド
-- **[Azure MCP Center - Microsoft 製](https://mcp.azure.com/?vendors.microsoft=true)**  
-  Microsoft 提供の MCP サーバー
+  Bug reports, feedback, and Subagent sample collection
+- **[Azure SRE Agent Portal Documentation](https://sre.azure.com/docs/overview)**  
+  Operation guide on the portal
+- **[Azure MCP Center - Microsoft](https://mcp.azure.com/?vendors.microsoft=true)**  
+  MCP servers provided by Microsoft
 
 
-## 🚀 活用シナリオ
+## 🚀 Use Case Scenarios
 
 **Scheduled Task**
 
-- ⭐ **[Azure WAF Compliance with MCP-Driven SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/azure-waf-compliance-with-mcp-driven-sre-agent/4494687)**  
-  Well-Architected Framework (WAF) の 5 本柱 + 組織固有のベストプラクティスに基いて、リソースのコンプライアンス評価と修復コマンドの提示を定期実行
-- ⭐ **[Build a Custom SSL Certificate Monitor with Azure SRE Agent: From Python Tool to Production Skill](https://techcommunity.microsoft.com/blog/appsonazureblog/build-a-custom-ssl-certificate-monitor-with-azure-sre-agent-from-python-tool-to-/4495832)**  
-  SSL 証明書の有効期限を監視する Python ツール を作成し、定期的にヘルスチェック
-- **[Azure SRE Agent で定型業務を自動化する: インシデント対応だけじゃない活用法（Zenn / Microsoft 有志）](https://zenn.dev/microsoft/articles/66ae4396f95646)**  
-  Service Health のリタイアメントや障害情報を定期的にチェックして、影響リソースの特定や回避策の提示を行うシナリオを紹介
+- **[Azure WAF Compliance with MCP-Driven SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/azure-waf-compliance-with-mcp-driven-sre-agent/4494687)**  
+  Periodically evaluates resource compliance and suggests remediation commands based on the 5 pillars of Well-Architected Framework (WAF) and organization-specific best practices
+- **[Build a Custom SSL Certificate Monitor with Azure SRE Agent: From Python Tool to Production Skill](https://techcommunity.microsoft.com/blog/appsonazureblog/build-a-custom-ssl-certificate-monitor-with-azure-sre-agent-from-python-tool-to-/4495832)**  
+  Creates a Python tool to monitor SSL certificate expiration and runs periodic health checks
 
 **Incident Response**
 
-- **[Azure SRE Agent が利用可能に！ 仮想マシンを調査してもらった（Zenn / Microsoft 有志）](https://zenn.dev/microsoft/articles/sreagent-getstart)**  
-  VM の CPU 高負荷シナリオで SRE Agent を試した入門レポート。作成手順・調査フロー・権限設定・日本語対応などを実演を交えて紹介
+- TBD
 
-## 🔌 MCP 連携ガイド
+## 🔌 MCP Integration Guide
 
 - **[How to Connect Azure SRE Agent to Azure MCP](https://techcommunity.microsoft.com/blog/appsonazureblog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905)**  
-  Azure MCP サーバーを使用して、ネイティブの az コマンドとは異なる方法で Azure リソースを操作する
+  Use Azure MCP Server to operate Azure resources in a different way from native az commands
 - **[Get started with Dynatrace MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-dynatrace-mcp-server-in-azure-sre-agent/4492363)**  
-  Dynatrace MCP サーバーを使用して、Dynatrace の機能（DQL クエリ、問題調査、セキュリティ脆弱性分析、時系列予測など）を SRE Agent から実行する
+  Use Dynatrace MCP Server to run Dynatrace capabilities (DQL queries, problem investigation, security vulnerability analysis, time-series forecasting, etc.) from SRE Agent
 - **[Get started with Elasticsearch MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-elasticsearch-mcp-server-in-azure-sre-agent/4492896)**  
-  Elasticsearch の Agent Builder MCP エンドポイントを使い、自然言語でログ検索・ES|QL 実行・クラスターヘルス確認を行う Subagent を構築する
+  Build a Subagent using Elasticsearch's Agent Builder MCP endpoint to perform natural language log search, ES|QL execution, and cluster health checks
 - **[MCP-Driven Azure SRE for Databricks](https://techcommunity.microsoft.com/blog/appsonazureblog/mcp-driven-azure-sre-for-databricks/4494630)**  
-  Databricks MCP サーバーを Azure Container Apps にデプロイし、ワークスペースのベストプラクティス準拠を自動検証（Scheduled Task）したり、ジョブ障害の根本原因を自律調査・修復（Incident Response）する
+  Deploy Databricks MCP Server to Azure Container Apps for automated workspace best-practice compliance validation (Scheduled Task) and autonomous root-cause investigation and remediation of job failures (Incident Response)
 
 
-## 🎬 デモ動画
+## 🎬 Demo Videos
 
 - **[Use Azure SRE Agent to automate tasks and increase site reliability (Microsoft Build 2025 / DEM550)](https://build.microsoft.com/en-US/sessions/DEM550)**  
-  Microsoft Build 2025 のデモセッション。自然言語でインテントを記述するだけで SRE Agent が一連のタスクを実行する仕組みを、e コマースサイトの障害対応シナリオを交えて紹介
+  Demo session from Microsoft Build 2025. Shows how SRE Agent executes a series of tasks just by describing intent in natural language, using an e-commerce site incident response scenario
 - **[Proactive .NET Reliability with Azure SRE Agent](https://www.youtube.com/watch?v=Kx_6SB-mhgg)**  
-  ASP.NET アプリを題材に、インシデント報告前に問題を検知・修復するプロアクティブな信頼性向上の方法をデモで解説
+  Using an ASP.NET app, demonstrates proactive reliability improvement by detecting and fixing issues before incident reports come in
 
-## 📣 事例
+## 📣 Case Studies
 
-- **[Azure SRE Agent x PagerDutyによる近未来インシデント対応への期待（イオンスマートテクノロジー / AEON TECH HUB #23）](https://speakerdeck.com/aeonpeople/the-future-of-incident-response-azure-sre-agent-x-pagerduty)**  
-  PagerDuty と Azure SRE Agent を連携し、インシデント検知から自律調査・復旧までを自動化するシナリオの実践報告
+- **[Future of Incident Response with Azure SRE Agent x PagerDuty (AEON Smart Technology / AEON TECH HUB #23)](https://speakerdeck.com/aeonpeople/the-future-of-incident-response-azure-sre-agent-x-pagerduty)**  
+  Practical report on integrating PagerDuty with Azure SRE Agent to automate from incident detection through autonomous investigation to recovery
 
-## 📚 その他
+## 📚 Other Resources
 
 - **[azure-sre-agent-demokit (ussvgr/GitHub)](https://github.com/ussvgr/azure-sre-agent-demokit)**  
-  Azure SRE Agent デモ環境を Terraform で一括プロビジョニングするキット。.NET Blazor デモアプリ・Application Insights アラート・SRE Agent リソースをまとめて作成できる
+  A kit for bulk provisioning Azure SRE Agent demo environments with Terraform. Creates a .NET Blazor demo app, Application Insights alerts, and SRE Agent resources together
 - **[Context Engineering Lessons from Building Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/context-engineering-lessons-from-building-azure-sre-agent/4481200/)**  
-  SRE Agent 開発チームが実地で得たコンテキストエンジニアリングの教訓（ツール設計・マルチエージェント・コード実行・コンパクション）を解説
+  Lessons in context engineering from the SRE Agent development team covering tool design, multi-agent, code execution, and compaction
 - **[Reactive Incident Response with Azure SRE Agent: From Alert to Resolution in Minutes](https://techcommunity.microsoft.com/blog/azurearchitectureblog/reactive-incident-response-with-azure-sre-agent-from-alert-to-resolution-in-minu/4492938)**  
-  SQL 接続障害・VM CPU スパイクの 2 シナリオで、アラート発火から自律調査・承認ベース修復・復旧確認までのフルフローをデモ。カスタム IRP 手順の書き方やセットアップ方法も解説
+  Full flow demo from alert firing to autonomous investigation, approval-based remediation, and recovery verification for 2 scenarios: SQL connection failure and VM CPU spike. Also covers custom IRP procedure writing and setup
 
-## 🛠️ リソース定義
+## 🛠️ Resource Definitions
 
 ### Subagent
 
@@ -95,4 +94,4 @@ TBD
 ### Tools
 
 - **[check_ssl_certificate_expiry.py](resources/tools/python/check_ssl_certificate_expiry.py)**  
-  指定ドメインの SSL/TLS 証明書の有効期限・発行者・リスクレベルを返す
+  Returns SSL/TLS certificate expiration date, issuer, and risk level for a specified domain

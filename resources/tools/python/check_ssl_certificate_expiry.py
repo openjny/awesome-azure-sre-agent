@@ -1,9 +1,9 @@
-# 用途: 指定ドメインの SSL/TLS 証明書の有効期限・発行者・リスクレベルを返す
-# 引数:
-#   domain (str, required): チェック対象のドメイン (例: api.contoso.com)
-#   port   (str, optional): 接続ポート (デフォルト: 443)
-# 前提パッケージ: 標準ライブラリのみ (ssl, socket, datetime)
-# 出典: https://techcommunity.microsoft.com/blog/appsonazureblog/build-a-custom-ssl-certificate-monitor-with-azure-sre-agent-from-python-tool-to-/4495832
+# Purpose: Returns the SSL/TLS certificate expiration date, issuer, and risk level for a specified domain
+# Arguments:
+#   domain (str, required): Target domain to check (e.g., api.contoso.com)
+#   port   (str, optional): Connection port (default: 443)
+# Dependencies: Standard library only (ssl, socket, datetime)
+# Reference: https://techcommunity.microsoft.com/blog/appsonazureblog/build-a-custom-ssl-certificate-monitor-with-azure-sre-agent-from-python-tool-to-/4495832
 
 import ssl
 import socket

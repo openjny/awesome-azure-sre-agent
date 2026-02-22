@@ -1,62 +1,67 @@
 # Repository Overview
 
-Azure SRE Agent の設定サンプルやリソースをまとめたリポジトリ。
+A collection of configuration samples and resources for Azure SRE Agent.
 
 ## Directory Structure
 
 ```text
 awesome-azure-sre-agent/
-├── docs/                # Docs
-│   ├── scenarios/       # 活用シナリオ集
-│   └── tips/            # その他 TIPS
+├── docs/                    # Docs
 ├── resources/
-│   ├── subagents/           # Subagent 設定サンプル
+│   ├── subagents/           # Subagent configuration samples
 │   │   └── {name}/
 │   │       ├── README.md
 │   │       └── {name}.yaml
-│   ├── skills/              # Skill 定義サンプル
+│   ├── skills/              # Skill definition samples
 │   │   └── {name}/
 │   │       ├── README.md
 │   │       └── {name}.yaml
-│   ├── connectors/          # Connector 設定サンプル
+│   ├── connectors/          # Connector configuration samples
 │   │   └── {name}/
 │   │       ├── README.md
-│   │       └── connector.yaml
-│   └── tools/               # Python スクリプト・KQL クエリ
+│   │       └── {name}.yaml
+│   └── tools/               # Python scripts and KQL queries
 │       ├── python/
-│       │   └── *.py
+│       │   └── {name}.py
 │       └── kql/
-│           └── *.kql
-└── README.md                # リンク集や全体説明
+│           └── {name}.kql
+└── README.md                # Link collection and overview
 ```
 
-**重要な分離原則**: `docs/` は人間が読む記事・解説 / `resources/` 配下（`subagents/`, `skills/`, `connectors/`, `tools/`）は実際に使えるリソースファイル。
+**Key separation principle**: `docs/` is for human-readable articles and explanations. Files under `resources/` (`subagents/`, `skills/`, `connectors/`, `tools/`) are actual usable resource files.
 
 ## Conventions
 
-### ドキュメント記事 (`docs/`)
+### README
 
-- 言語は日本語ベース（公式リンクや技術用語は英語を併記しても良い）
-- 1 記事 = 1 シナリオ・TIPS
-- 目的・前提条件・手順・ポイントを明確に記載
-- 可能な限りスクリーンショットやコード例を活用
+- `README.md`: **English-audience content only.** Add a link or article here only if it is primarily written for English-speaking or global audiences. Translating a description does not make locale-specific content eligible for `README.md`.
+- `README.<locale>.md`: **Locale-audience content.** Add content written for that locale's audience here. Items shared with `README.md` (global content) are also listed here in bilingual form (English + locale language).
 
-### Subagent リソース (`resources/subagents/`)
+When adding new content, always check the **intended audience language** of the source material first, then decide which README(s) it belongs in.
 
-- 1 ディレクトリ = 1 subagent
-- `README.md` に目的・前提条件・使い方を記載
+### Documentation articles (`docs/`)
 
-### Skill リソース (`resources/skills/`)
+- Language: English-based
+- 1 article = 1 scenario or tip
+- Clearly describe the purpose, prerequisites, steps, and key points
+- Use screenshots and code examples whenever possible
+
+### Subagent resources (`resources/subagents/`)
+
+- 1 directory = 1 subagent
+- Include a `README.md` describing purpose, prerequisites, and usage
+
+### Skill resources (`resources/skills/`)
 
 - 1 directory = 1 skill
-- `README.md` に目的・前提条件・使い方を記載
+- Include a `README.md` describing purpose, prerequisites, and usage
 
-### Connector リソース (`resources/connectors/`)
+### Connector resources (`resources/connectors/`)
 
-- 1 ディレクトリ = 1 connector
-- 機密情報（API キー等）は絶対にコミットしない。プレースホルダー `<YOUR_API_KEY>` を使用
+- 1 directory = 1 connector
+- Never commit sensitive information (API keys, etc.). Use the placeholder `<YOUR_API_KEY>`
 
 ### Tools (`resources/tools/`)
 
-- `python/`: 単体で実行可能なスクリプト。ファイル冒頭に用途・引数・前提パッケージをコメントで記載
-- `kql/`: クエリファイル。冒頭コメントにクエリの目的・対象テーブルを記載
+- `python/`: Standalone executable scripts. Include a comment block at the top of each file with purpose, arguments, and required packages
+- `kql/`: Query files. Include a comment at the top with the query's purpose and target table
