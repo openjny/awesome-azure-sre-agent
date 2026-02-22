@@ -48,6 +48,8 @@ Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SR
 
 ## 🎬 デモ動画
 
+- **[Use Azure SRE Agent to automate tasks and increase site reliability (Microsoft Build 2025 / DEM550)](https://build.microsoft.com/en-US/sessions/DEM550)**  
+  Microsoft Build 2025 のデモセッション。自然言語でインテントを記述するだけで SRE Agent が一連のタスクを実行する仕組みを、e コマースサイトの障害対応シナリオを交えて紹介
 - **[Proactive .NET Reliability with Azure SRE Agent](https://www.youtube.com/watch?v=Kx_6SB-mhgg)**  
   ASP.NET アプリを題材に、インシデント報告前に問題を検知・修復するプロアクティブな信頼性向上の方法をデモで解説
 
