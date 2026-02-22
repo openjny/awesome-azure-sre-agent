@@ -19,6 +19,7 @@ Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SR
 | タイトル | 説明 |
 |:---|:---|
 | [Azure WAF Compliance with MCP-Driven SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/azure-waf-compliance-with-mcp-driven-sre-agent/4494687) | WAF の 5 本柱 + 組織固有のベストプラクティスに基づくコンプライアンス評価と修復コマンド生成を自律的に実行 |
+| [Build a Custom SSL Certificate Monitor with Azure SRE Agent: From Python Tool to Production Skill](https://techcommunity.microsoft.com/blog/appsonazureblog/build-a-custom-ssl-certificate-monitor-with-azure-sre-agent-from-python-tool-to-/4495832) | SSL 証明書の有効期限を監視する Python ツール（`CheckSSLCertificateExpiry`）を作成し、スキルとして組み合わせて専用 Subagent を構成するまでのチュートリアル |
 | [Azure SRE Agent が利用可能に！ 仮想マシンを調査してもらった（Zenn / Microsoft 有志）](https://zenn.dev/microsoft/articles/sreagent-getstart) | VM の CPU 高負荷シナリオで SRE Agent を試した入門レポート。作成手順・調査フロー・権限設定・日本語対応などを実演を交えて紹介 |
 
 ## デモ動画
