@@ -77,4 +77,7 @@ TBD
 
 ### Tools
 
-TBD
+**Python**
+
+- **[check_ssl_certificate_expiry.py](resources/tools/python/check_ssl_certificate_expiry.py)**  
+  指定ドメインの SSL/TLS 証明書の有効期限・発行者・リスクレベルを返す
