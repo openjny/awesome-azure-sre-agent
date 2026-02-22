@@ -4,7 +4,7 @@ Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SR
 
 このリポジトリでは、Azure SRE Agent に関する公式ドキュメント、活用シナリオ、デモ動画、事例、リソース定義などをまとめています。Azure SRE Agent を導入・活用する際の参考資料としてご活用ください。
 
-## 公式リンク集
+## 🔗 公式リンク集
 
 - **[Azure SRE Agent 概要](https://learn.microsoft.com/azure/sre-agent/overview)**  
   公式ドキュメント
@@ -17,7 +17,7 @@ Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SR
 - **[microsoft/sre-agent](https://github.com/microsoft/sre-agent)**  
   バグ報告・フィードバック・Subagent サンプル集
 
-## 活用シナリオ
+## 🚀 活用シナリオ
 
 **Scheduled Task**
 
@@ -31,7 +31,7 @@ Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SR
 - **[Azure SRE Agent が利用可能に！ 仮想マシンを調査してもらった（Zenn / Microsoft 有志）](https://zenn.dev/microsoft/articles/sreagent-getstart)**  
   VM の CPU 高負荷シナリオで SRE Agent を試した入門レポート。作成手順・調査フロー・権限設定・日本語対応などを実演を交えて紹介
 
-## MCP 連携ガイド
+## 🔌 MCP 連携ガイド
 
 - **[How to Connect Azure SRE Agent to Azure MCP](https://techcommunity.microsoft.com/blog/appsonazureblog/how-to-connect-azure-sre-agent-to-azure-mcp/4488905)**  
   Azure MCP サーバーを使用して、ネイティブの az コマンドとは異なる方法で Azure リソースを操作する
@@ -43,24 +43,24 @@ Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SR
   Databricks MCP サーバーを Azure Container Apps にデプロイし、ワークスペースのベストプラクティス準拠を自動検証（Scheduled Task）したり、ジョブ障害の根本原因を自律調査・修復（Incident Response）する
 
 
-## デモ動画
+## 🎬 デモ動画
 
 - **[Proactive .NET Reliability with Azure SRE Agent](https://www.youtube.com/watch?v=Kx_6SB-mhgg)**  
   ASP.NET アプリを題材に、インシデント報告前に問題を検知・修復するプロアクティブな信頼性向上の方法をデモで解説
 
-## 事例
+## 📣 事例
 
 - **[Azure SRE Agent x PagerDutyによる近未来インシデント対応への期待（イオンスマートテクノロジー / AEON TECH HUB #23）](https://speakerdeck.com/aeonpeople/the-future-of-incident-response-azure-sre-agent-x-pagerduty)**  
   PagerDuty と Azure SRE Agent を連携し、インシデント検知から自律調査・復旧までを自動化するシナリオの実践報告
 
-## その他
+## 📚 その他
 
 - **[Context Engineering Lessons from Building Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/context-engineering-lessons-from-building-azure-sre-agent/4481200/)**  
   SRE Agent 開発チームが実地で得たコンテキストエンジニアリングの教訓（ツール設計・マルチエージェント・コード実行・コンパクション）を解説
 - **[Reactive Incident Response with Azure SRE Agent: From Alert to Resolution in Minutes](https://techcommunity.microsoft.com/blog/azurearchitectureblog/reactive-incident-response-with-azure-sre-agent-from-alert-to-resolution-in-minu/4492938)**  
   SQL 接続障害・VM CPU スパイクの 2 シナリオで、アラート発火から自律調査・承認ベース修復・復旧確認までのフルフローをデモ。カスタム IRP 手順の書き方やセットアップ方法も解説
 
-## リソース定義
+## 🛠️ リソース定義
 
 ### Subagent
 
