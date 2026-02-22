@@ -36,12 +36,12 @@
   Well-Architected Framework (WAF) の 5 本柱 + 組織固有のベストプラクティスに基いて、リソースのコンプライアンス評価と修復コマンドの提示を定期実行
 - **[Build a Custom SSL Certificate Monitor with Azure SRE Agent: From Python Tool to Production Skill](https://techcommunity.microsoft.com/blog/appsonazureblog/build-a-custom-ssl-certificate-monitor-with-azure-sre-agent-from-python-tool-to-/4495832)**  
   SSL 証明書の有効期限を監視する Python ツールを作成し、定期的にヘルスチェック
-- **[Azure SRE Agent で定型業務を自動化する: インシデント対応だけじゃない活用法（Zenn / Microsoft 有志）](https://zenn.dev/microsoft/articles/66ae4396f95646)**  
+- 🇯🇵 **[Azure SRE Agent で定型業務を自動化する: インシデント対応だけじゃない活用法（Zenn / Microsoft 有志）](https://zenn.dev/microsoft/articles/66ae4396f95646)**  
   Service Health のリタイアメントや障害情報を定期的にチェックして、影響リソースの特定や回避策の提示を行うシナリオを紹介
 
 **Incident Response**
 
-- **[Azure SRE Agent が利用可能に！ 仮想マシンを調査してもらった（Zenn / Microsoft 有志）](https://zenn.dev/microsoft/articles/sreagent-getstart)**  
+- 🇯🇵 **[Azure SRE Agent が利用可能に！ 仮想マシンを調査してもらった（Zenn / Microsoft 有志）](https://zenn.dev/microsoft/articles/sreagent-getstart)**  
   VM の CPU 高負荷シナリオで SRE Agent を試した入門レポート。作成手順・調査フロー・権限設定・日本語対応などを実演を交えて紹介
 
 ## 🔌 MCP 連携ガイド
@@ -64,20 +64,21 @@
 
 ## 🧪 ラボ環境
 
-- **[azure-sre-agent-demokit (ussvgr/GitHub)](https://github.com/ussvgr/azure-sre-agent-demokit)**  
+- 🇯🇵 **[azure-sre-agent-demokit (ussvgr/GitHub)](https://github.com/ussvgr/azure-sre-agent-demokit)**  
   Azure SRE Agent デモ環境を Terraform で一括プロビジョニングするキット。.NET Blazor デモアプリ・Application Insights アラート・SRE Agent リソースをまとめて作成できる
+- 🇯🇵 **[azure-sre-agent-demo (kohei3110/GitHub)](https://github.com/kohei3110/azure-sre-agent-demo)**  
+  Python API + React フロントエンド + Cosmos DB を Container Apps にデプロイするデモ環境。Terraform による CI/CD パイプラインも備える
 - **[azure-sre-agent-demo (jiratouchmhp/GitHub)](https://github.com/jiratouchmhp/azure-sre-agent-demo)**  
   マルチ層アプリ（React + .NET 8 + PostgreSQL）を使ったハンズオンデモ環境。セキュリティ・コスト・可用性の欠陽を意図的に仅込み、ライブインシデントのトリガースクリプト付き
 - **[azure-sre-agent-sandbox (matthansen0/GitHub)](https://github.com/matthansen0/azure-sre-agent-sandbox)**  
   AKS ベースのデモラボ。OOMKilled・CrashLoop・NetworkBlock など 10 種の壊せるシナリオとフルオブザーバビリティスタックを備えた自動化済み環境
 - **[azure-sre-agent (pelithne/GitHub)](https://github.com/pelithne/azure-sre-agent)**  
   AKS クラスタでエラー・負荷テストをシミュレートするツール集。設定可能なメモリリーク Python アプリと nginx デプロイメントを含む
-- **[azure-sre-agent-demo (kohei3110/GitHub)](https://github.com/kohei3110/azure-sre-agent-demo)**  
-  Python API + React フロントエンド + Cosmos DB を Container Apps にデプロイするデモ環境。Terraform による CI/CD パイプラインも備える
+
 
 ## 📣 事例
 
-- **[Azure SRE Agent x PagerDutyによる近未来インシデント対応への期待（イオンスマートテクノロジー / AEON TECH HUB #23）](https://speakerdeck.com/aeonpeople/the-future-of-incident-response-azure-sre-agent-x-pagerduty)**  
+- 🇯🇵 **[Azure SRE Agent x PagerDutyによる近未来インシデント対応への期待（イオンスマートテクノロジー / AEON TECH HUB #23）](https://speakerdeck.com/aeonpeople/the-future-of-incident-response-azure-sre-agent-x-pagerduty)**  
   PagerDuty と Azure SRE Agent を連携し、インシデント検知から自律調査・復旧までを自動化するシナリオの実践報告
 
 ## 📚 その他
