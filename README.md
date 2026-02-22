@@ -6,25 +6,26 @@ Azure SRE Agent は、Microsoft Azure 上のシステムに最適化された SR
 
 ## 🔗 公式リンク集
 
-- **[Azure SRE Agent 概要](https://learn.microsoft.com/azure/sre-agent/overview)**  
+- ⭐ **[Azure SRE Agent 概要](https://learn.microsoft.com/azure/sre-agent/overview)**  
   公式ドキュメント
+- ⭐ **[Azure SRE Agent タグ - Microsoft Tech Community](https://techcommunity.microsoft.com/tag/azure%20sre%20agent)**  
+  公式ブログ記事・コミュニティ投稿のまとめ
+- ⭐ **[microsoft/sre-agent](https://github.com/microsoft/sre-agent)**  
+  バグ報告・フィードバック・Subagent サンプル集
 - **[Azure SRE Agent ポータル ドキュメント](https://sre.azure.com/docs/overview)**  
   ポータル上の操作ガイド
 - **[Azure MCP Center - Microsoft 製](https://mcp.azure.com/?vendors.microsoft=true)**  
   Microsoft 提供の MCP サーバー
-- **[Azure SRE Agent タグ - Microsoft Tech Community](https://techcommunity.microsoft.com/tag/azure%20sre%20agent)**  
-  公式ブログ記事・コミュニティ投稿のまとめ
-- **[microsoft/sre-agent](https://github.com/microsoft/sre-agent)**  
-  バグ報告・フィードバック・Subagent サンプル集
+
 
 ## 🚀 活用シナリオ
 
 **Scheduled Task**
 
-- **[Azure WAF Compliance with MCP-Driven SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/azure-waf-compliance-with-mcp-driven-sre-agent/4494687)**  
+- ⭐ **[Azure WAF Compliance with MCP-Driven SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/azure-waf-compliance-with-mcp-driven-sre-agent/4494687)**  
   WAF の 5 本柱 + 組織固有のベストプラクティスに基づくコンプライアンス評価と修復コマンド生成を自律的に実行
-- **[Build a Custom SSL Certificate Monitor with Azure SRE Agent: From Python Tool to Production Skill](https://techcommunity.microsoft.com/blog/appsonazureblog/build-a-custom-ssl-certificate-monitor-with-azure-sre-agent-from-python-tool-to-/4495832)**  
-  SSL 証明書の有効期限を監視する Python ツール（`CheckSSLCertificateExpiry`）を作成し、スキルとして組み合わせて専用 Subagent を構成するまでのチュートリアル
+- ⭐ **[Build a Custom SSL Certificate Monitor with Azure SRE Agent: From Python Tool to Production Skill](https://techcommunity.microsoft.com/blog/appsonazureblog/build-a-custom-ssl-certificate-monitor-with-azure-sre-agent-from-python-tool-to-/4495832)**  
+  SSL 証明書の有効期限を監視する Python ツール を作成し、定期的にヘルスチェックするサブエージェントを構築
 
 **Incident Response**
 
