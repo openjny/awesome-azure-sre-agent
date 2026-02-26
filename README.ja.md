@@ -54,6 +54,12 @@
   Elasticsearch の Agent Builder MCP エンドポイントを使い、自然言語でログ検索・ES|QL 実行・クラスターヘルス確認を行う Subagent を構築する
 - **[MCP-Driven Azure SRE for Databricks](https://techcommunity.microsoft.com/blog/appsonazureblog/mcp-driven-azure-sre-for-databricks/4494630)**  
   Databricks MCP サーバーを Azure Container Apps にデプロイし、ワークスペースのベストプラクティス準拠を自動検証（Scheduled Task）したり、ジョブ障害の根本原因を自律調査・修復（Incident Response）する
+- **[Get started with Atlassian Rovo MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-atlassian-rovo-mcp-server-in-azure-sre-agent/4497122)**  
+  公式 Atlassian Rovo MCP サーバーを使用して、Jira・Confluence・Compass・Jira Service Management に Azure SRE Agent から接続する
+- **[Get started with Datadog MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-datadog-mcp-server-in-azure-sre-agent/4497123)**  
+  公式 Datadog MCP サーバーを使用して、ログ・メトリクス・APM トレース・モニター・インシデント・ダッシュボードなど Datadog のデータを SRE Agent から操作する
+- **[Get started with PagerDuty MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-pagerduty-mcp-server-in-azure-sre-agent/4497124)**  
+  公式 PagerDuty MCP サーバーを使用して、インシデント・オンコールスケジュール・サービス・エスカレーションポリシーなどを Azure SRE Agent から操作する
 
 ## 🎬 デモ動画
 
