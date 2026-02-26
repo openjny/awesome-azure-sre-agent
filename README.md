@@ -51,6 +51,12 @@ This repository collects official documentation, use case scenarios, demo videos
   Build a Subagent using Elasticsearch's Agent Builder MCP endpoint to perform natural language log search, ES|QL execution, and cluster health checks
 - **[MCP-Driven Azure SRE for Databricks](https://techcommunity.microsoft.com/blog/appsonazureblog/mcp-driven-azure-sre-for-databricks/4494630)**  
   Deploy Databricks MCP Server to Azure Container Apps for automated workspace best-practice compliance validation (Scheduled Task) and autonomous root-cause investigation and remediation of job failures (Incident Response)
+- **[Get started with Atlassian Rovo MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-atlassian-rovo-mcp-server-in-azure-sre-agent/4497122)**  
+  Connect Azure SRE Agent to Jira, Confluence, Compass, and Jira Service Management using the official Atlassian Rovo MCP server
+- **[Get started with Datadog MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-datadog-mcp-server-in-azure-sre-agent/4497123)**  
+  Use the official Datadog MCP server to interact with logs, metrics, APM traces, monitors, incidents, dashboards, and more from Azure SRE Agent
+- **[Get started with PagerDuty MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-pagerduty-mcp-server-in-azure-sre-agent/4497124)**  
+  Connect Azure SRE Agent to PagerDuty using the official PagerDuty MCP server for incidents, on-call schedules, services, escalation policies, and more
 
 ## 🎬 Demo Videos
 
