@@ -87,6 +87,8 @@ This repository collects official documentation, use case scenarios, demo videos
   Lessons in context engineering from the SRE Agent development team covering tool design, multi-agent, code execution, and compaction
 - **[Reactive Incident Response with Azure SRE Agent: From Alert to Resolution in Minutes](https://techcommunity.microsoft.com/blog/azurearchitectureblog/reactive-incident-response-with-azure-sre-agent-from-alert-to-resolution-in-minu/4492938)**  
   Full flow demo from alert firing to autonomous investigation, approval-based remediation, and recovery verification for 2 scenarios: SQL connection failure and VM CPU spike. Also covers custom IRP procedure writing and setup
+- **[Azure SRE Agent Architecture and Creation: Practical Benefits for SAP on Azure Customers](https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/azure-sre-agent-architecture-and-creation-practical-benefits-for-sap-on-azure-cu/4497625)**  
+  Overview of SRE Agent architecture and how it delivers practical benefits for SAP on Azure workloads through automated diagnostics, root cause analysis, and guided remediation
 
 ## 🛠️ Resource Definitions
 
