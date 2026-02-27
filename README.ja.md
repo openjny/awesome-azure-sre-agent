@@ -93,6 +93,8 @@
   SRE Agent 開発チームが実地で得たコンテキストエンジニアリングの教訓（ツール設計・マルチエージェント・コード実行・コンパクション）を解説
 - **[Reactive Incident Response with Azure SRE Agent: From Alert to Resolution in Minutes](https://techcommunity.microsoft.com/blog/azurearchitectureblog/reactive-incident-response-with-azure-sre-agent-from-alert-to-resolution-in-minu/4492938)**  
   SQL 接続障害・VM CPU スパイクの 2 シナリオで、アラート発火から自律調査・承認ベース修復・復旧確認までのフルフローをデモ。カスタム IRP 手順の書き方やセットアップ方法も解説
+- **[Azure SRE Agent Architecture and Creation: Practical Benefits for SAP on Azure Customers](https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/azure-sre-agent-architecture-and-creation-practical-benefits-for-sap-on-azure-cu/4497625)**  
+  SRE Agent のアーキテクチャの概要と、自動診断・根本原因分析・ガイド付き修復を通じて SAP on Azure ワークロードに実践的なメリットをもたらす方法を解説
 
 ## 🛠️ リソース定義
 
