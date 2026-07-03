@@ -6,23 +6,24 @@ on:
     - cron: "0 0 * * 1"
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 engine: copilot
 # A curated link list can reference any domain and grows over time, so a fixed
 # network allowlist would falsely flag links to new domains as broken. This
-# read-only workflow (contents: read, no secrets) only performs outbound HTTP
-# checks, so the agent firewall is disabled to allow reaching arbitrary URLs.
+# workflow only performs outbound HTTP checks, so the agent firewall is disabled
+# to allow reaching arbitrary URLs.
 features:
-  dangerously-disable-sandbox-agent: "Read-only link checker must reach arbitrary curated URLs; no secrets or write access are exposed."
+  dangerously-disable-sandbox-agent: "Link checker must reach arbitrary curated URLs to verify them; no secrets are exposed."
 sandbox:
   agent: false
 tools:
   bash: [":*"]
 safe-outputs:
-  create-issue:
+  create-pull-request:
     title-prefix: "[link-check] "
     labels: [automation, link-check]
-    close-older-issues: true
+    draft: false
 ---
 
 # README Broken Link Checker
@@ -47,13 +48,13 @@ find broken links in the two top-level README files.
 
 ## Output
 
-- If **no** broken links are found, do **not** create an issue. Simply finish and log that
-  all links are healthy.
-- If one or more broken links are found, create a single GitHub issue titled
-  `Broken links detected in README` summarizing the findings. In the body, include a
-  Markdown table with these columns:
-  - `URL` — the broken link
+- If **no** broken links are found, do **not** create a pull request. Simply finish and log
+  that all links are healthy.
+- If one or more broken links are found, remove the broken Markdown link entries from the
+  affected README files and create a pull request with those removals. The PR title should be
+  `Remove broken links detected in README`. In the PR body, include a Markdown table with
+  these columns:
+  - `URL` — the broken link removed
   - `Status` — the HTTP status code or error (e.g. `404`, `timeout`, `DNS error`)
-  - `File(s)` — which README file(s) reference it (`README.md`, `README.ja.md`, or both)
-
-  Keep the report factual. Do not attempt to fix the links or edit any files.
+  - `File(s)` — which README file(s) the link was removed from (`README.md`, `README.ja.md`,
+    or both)

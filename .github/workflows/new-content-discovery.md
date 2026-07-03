@@ -6,13 +6,14 @@ on:
     - cron: "0 1 * * 1"
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 engine: copilot
 # Content discovery must search and fetch across arbitrary sites, so a fixed
-# allowlist is impractical. This read-only workflow (contents: read, no secrets)
-# only reads public web pages, so the agent firewall is disabled.
+# allowlist is impractical. This workflow only reads public web pages, so the
+# agent firewall is disabled.
 features:
-  dangerously-disable-sandbox-agent: "Read-only content-discovery agent must search/fetch arbitrary public web pages; no secrets or write access are exposed."
+  dangerously-disable-sandbox-agent: "Content-discovery agent must search/fetch arbitrary public web pages; no secrets are exposed."
 sandbox:
   agent: false
 tools:
@@ -20,10 +21,10 @@ tools:
   web-fetch:
   web-search:
 safe-outputs:
-  create-issue:
+  create-pull-request:
     title-prefix: "[new-content] "
     labels: [automation, content-discovery]
-    close-older-issues: true
+    draft: false
 ---
 
 # Azure SRE Agent New Content Discovery
@@ -59,11 +60,11 @@ whether it is **global content** (goes in both `README.md` and `README.ja.md`) o
 
 ## Output
 
-- If no new items are found, do **not** create an issue. Log that the list is up to date.
-- Otherwise create a single GitHub issue titled `New Azure SRE Agent content to review`. In
-  the body, list the candidates grouped by suggested section. For each candidate include the
-  title (as a Markdown link), the publish date, the one-sentence summary, and the suggested
-  README placement (global vs. Japanese-only). Make clear these are suggestions for a
-  maintainer to review before adding.
-
-Do not edit the README files yourself. Report candidates only.
+- If no new items are found, do **not** create a pull request. Log that the list is up to date.
+- Otherwise, add the new candidates to the appropriate sections of the README files according
+  to the audience-language policy (global content → both `README.md` and `README.ja.md`;
+  Japanese-only content → `README.ja.md` only), then create a pull request with the changes.
+  The PR title should be `Add new Azure SRE Agent content`. In the PR body, list the
+  candidates grouped by suggested section. For each candidate include the title (as a
+  Markdown link), the publish date, the one-sentence summary, and the README placement
+  (global vs. Japanese-only), so a maintainer can review before merging.
