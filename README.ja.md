@@ -60,6 +60,8 @@
   公式 Datadog MCP サーバーを使用して、ログ・メトリクス・APM トレース・モニター・インシデント・ダッシュボードなど Datadog のデータを SRE Agent から操作する
 - **[Get started with PagerDuty MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-pagerduty-mcp-server-in-azure-sre-agent/4497124)**  
   公式 PagerDuty MCP サーバーを使用して、インシデント・オンコールスケジュール・サービス・エスカレーションポリシーなどを Azure SRE Agent から操作する
+- **[New in Azure SRE Agent: Log Analytics and Application Insights Connectors](https://techcommunity.microsoft.com/blog/appsonazureblog/new-in-azure-sre-agent-log-analytics-and-application-insights-connectors/4509649)**  
+  Azure MCP Server (`monitor` ネームスペース) を裏側で使うネイティブコネクタ。Log Analytics ワークスペースおよび Application Insights リソースに対して調査中に KQL クエリを直接実行でき、RBAC の付与も自動化される
 
 ## 🎬 デモ動画
 
@@ -95,6 +97,18 @@
   SQL 接続障害・VM CPU スパイクの 2 シナリオで、アラート発火から自律調査・承認ベース修復・復旧確認までのフルフローをデモ。カスタム IRP 手順の書き方やセットアップ方法も解説
 - **[Azure SRE Agent Architecture and Creation: Practical Benefits for SAP on Azure Customers](https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/azure-sre-agent-architecture-and-creation-practical-benefits-for-sap-on-azure-cu/4497625)**  
   SRE Agent のアーキテクチャの概要と、自動診断・根本原因分析・ガイド付き修復を通じて SAP on Azure ワークロードに実践的なメリットをもたらす方法を解説
+- **[Azure SRE Agent at Microsoft Build 2026: Bringing agentic operations to the enterprise](https://techcommunity.microsoft.com/blog/appsonazureblog/azure-sre-agent-at-microsoft-build-2026-bringing-agentic-operations-to-the-enter/4524669)**  
+  Microsoft Build 2026 で発表された 5 つのリリース（VNet 統合・Managed Connectors・詳細な権限モデル・GitHub Enterprise ネイティブ対応・Private Plugins Marketplace）をまとめたアンブレラ記事。エンタープライズ規模での本格利用を目指す機能群を紹介
+- **[VNet integration for Azure SRE Agent (preview)](https://techcommunity.microsoft.com/blog/appsonazureblog/vnet-integration-for-azure-sre-agent-preview/4524287)**  
+  エージェントのアウトバウンド通信を、NSG ルールやプライベート DNS を適用した自組織 VNet の委任サブネット経由に流す機能。3 種類のエグレスモード（Unrestricted / Limited / Azure VNet）とパッケージレジストリ・コードリポジトリ向けのマネージドインフラバイパス経路、構成手順を解説
+- **[Managed Connectors for SRE Agent (preview) - Govern what your agent can do](https://techcommunity.microsoft.com/blog/appsonazureblog/managed-connectors-for-sre-agent-preview--govern-what-your-agent-can-do/4524840)**  
+  次世代のコネクタ体験。OneDrive・SharePoint・Google Drive・GitLab・Power BI・Microsoft Security Copilot など SaaS カタログを拡充し、公開する操作の選択、パラメータの固定、ツール単位の Allow/Ask 承認、エージェントの信頼境界外での資格情報分離を提供
+- **[Shaping what Azure SRE Agent does: Tool Permissions and Hooks](https://techcommunity.microsoft.com/blog/appsonazureblog/shaping-what-azure-sre-agent-does-tool-permissions-and-hooks/4524791)**  
+  Global / Agent / Thread スコープごとに allow / ask / deny ルールを設定できるグローバルなツールアクセスポリシーと、ツール呼び出しの実パラメータを見てブロック・書き換え・リダイレクトを行える Command / Prompt Hooks を解説
+- **[Bring Your Own GitHub App: Connecting Azure SRE Agent to Enterprise Repositories](https://techcommunity.microsoft.com/blog/appsonazureblog/bring-your-own-github-app-connecting-azure-sre-agent-to-enterprise-repositories/4524673)**  
+  GitHub Enterprise Cloud (`*.ghe.com`) および github.com 向けに、独自の GitHub App を持ち込んで認証を行うファーストクラスの方式。秘密鍵は Azure Key Vault に格納し、エージェントのマネージド ID がランタイムに短命のインストールトークンを発行する
+- **[Private Plugins with Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/private-plugins-with-azure-sre-agent/4523763)**  
+  プラグインマーケットプレイスをプライベート GitHub / GitHub Enterprise リポジトリでホストし、組織で承認したスキル・ランブック・MCP ツールを全 SRE Agent に配布する仕組み。OAuth / PAT / GitHub App 認証とインストール時のバージョン固定に対応
 
 ## 🛠️ リソース定義
 

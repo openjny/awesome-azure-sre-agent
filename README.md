@@ -57,6 +57,8 @@ This repository collects official documentation, use case scenarios, demo videos
   Use the official Datadog MCP server to interact with logs, metrics, APM traces, monitors, incidents, dashboards, and more from Azure SRE Agent
 - **[Get started with PagerDuty MCP server in Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/get-started-with-pagerduty-mcp-server-in-azure-sre-agent/4497124)**  
   Connect Azure SRE Agent to PagerDuty using the official PagerDuty MCP server for incidents, on-call schedules, services, escalation policies, and more
+- **[New in Azure SRE Agent: Log Analytics and Application Insights Connectors](https://techcommunity.microsoft.com/blog/appsonazureblog/new-in-azure-sre-agent-log-analytics-and-application-insights-connectors/4509649)**  
+  Native connectors backed by the Azure MCP Server (`monitor` namespace) that let the agent run KQL queries against Log Analytics workspaces and Application Insights resources during investigations, with automatic RBAC setup
 
 ## 🎬 Demo Videos
 
@@ -89,6 +91,18 @@ This repository collects official documentation, use case scenarios, demo videos
   Full flow demo from alert firing to autonomous investigation, approval-based remediation, and recovery verification for 2 scenarios: SQL connection failure and VM CPU spike. Also covers custom IRP procedure writing and setup
 - **[Azure SRE Agent Architecture and Creation: Practical Benefits for SAP on Azure Customers](https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/azure-sre-agent-architecture-and-creation-practical-benefits-for-sap-on-azure-cu/4497625)**  
   Overview of SRE Agent architecture and how it delivers practical benefits for SAP on Azure workloads through automated diagnostics, root cause analysis, and guided remediation
+- **[Azure SRE Agent at Microsoft Build 2026: Bringing agentic operations to the enterprise](https://techcommunity.microsoft.com/blog/appsonazureblog/azure-sre-agent-at-microsoft-build-2026-bringing-agentic-operations-to-the-enter/4524669)**  
+  Umbrella post for the five Build 2026 releases (VNet integration, Managed Connectors, granular permissions, native GitHub Enterprise support, Private Plugins Marketplace) that focus on enterprise adoption at scale
+- **[VNet integration for Azure SRE Agent (preview)](https://techcommunity.microsoft.com/blog/appsonazureblog/vnet-integration-for-azure-sre-agent-preview/4524287)**  
+  Route the agent's outbound traffic through a delegated subnet in your own VNet with your NSG rules and private DNS. Covers the three egress modes (Unrestricted / Limited / Azure VNet), the managed-infra bypass path for package registries and code repositories, and configuration guidance
+- **[Managed Connectors for SRE Agent (preview) - Govern what your agent can do](https://techcommunity.microsoft.com/blog/appsonazureblog/managed-connectors-for-sre-agent-preview--govern-what-your-agent-can-do/4524840)**  
+  Next-generation connector experience with an expanded SaaS catalog (OneDrive, SharePoint, Google Drive, GitLab, Power BI, Microsoft Security Copilot, etc.), per-tool operation selection, pinned parameter values, per-tool Allow/Ask approval, and credential isolation outside the agent's trust boundary
+- **[Shaping what Azure SRE Agent does: Tool Permissions and Hooks](https://techcommunity.microsoft.com/blog/appsonazureblog/shaping-what-azure-sre-agent-does-tool-permissions-and-hooks/4524791)**  
+  Global tool access policies with allow / ask / deny rules at Global / Agent / Thread scope, plus Command and Prompt Hooks that run before a tool call to block, rewrite, or redirect it based on the actual invocation parameters
+- **[Bring Your Own GitHub App: Connecting Azure SRE Agent to Enterprise Repositories](https://techcommunity.microsoft.com/blog/appsonazureblog/bring-your-own-github-app-connecting-azure-sre-agent-to-enterprise-repositories/4524673)**  
+  First-class BYO GitHub App authentication for GitHub Enterprise Cloud (`*.ghe.com`) and github.com. The App's private key stays in Azure Key Vault; the agent's managed identity mints short-lived installation tokens at runtime
+- **[Private Plugins with Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/private-plugins-with-azure-sre-agent/4523763)**  
+  Host plugin marketplaces in private GitHub / GitHub Enterprise repositories to distribute organization-approved skills, runbooks, and MCP tools across every SRE Agent, with OAuth / PAT / GitHub App authentication and version pinning at install time
 
 ## 🛠️ Resource Definitions
 
