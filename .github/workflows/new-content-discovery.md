@@ -8,17 +8,15 @@ on:
 permissions:
   contents: read
 engine: copilot
-network:
-  allowed:
-    - defaults
-    - "techcommunity.microsoft.com"
-    - "learn.microsoft.com"
-    - "build.microsoft.com"
-    - "aka.ms"
-    - "www.youtube.com"
-    - "youtu.be"
+# Content discovery must search and fetch across arbitrary sites, so a fixed
+# allowlist is impractical. This read-only workflow (contents: read, no secrets)
+# only reads public web pages, so the agent firewall is disabled.
+features:
+  dangerously-disable-sandbox-agent: "Read-only content-discovery agent must search/fetch arbitrary public web pages; no secrets or write access are exposed."
+sandbox:
+  agent: false
 tools:
-  bash: ["cat", "grep"]
+  bash: [":*"]
   web-fetch:
   web-search:
 safe-outputs:

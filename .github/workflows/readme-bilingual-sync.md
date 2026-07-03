@@ -10,7 +10,7 @@ permissions:
   contents: read
 engine: copilot
 tools:
-  bash: ["cat", "grep", "diff"]
+  bash: [":*"]
 safe-outputs:
   add-comment:
   create-issue:

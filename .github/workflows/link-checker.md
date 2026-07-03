@@ -8,25 +8,16 @@ on:
 permissions:
   contents: read
 engine: copilot
-network:
-  allowed:
-    - defaults
-    - "techcommunity.microsoft.com"
-    - "learn.microsoft.com"
-    - "build.microsoft.com"
-    - "sre.azure.com"
-    - "mcp.azure.com"
-    - "www.azure.com"
-    - "aka.ms"
-    - "github.com"
-    - "*.github.com"
-    - "www.youtube.com"
-    - "youtu.be"
-    - "x.com"
-    - "zenn.dev"
-    - "speakerdeck.com"
+# A curated link list can reference any domain and grows over time, so a fixed
+# network allowlist would falsely flag links to new domains as broken. This
+# read-only workflow (contents: read, no secrets) only performs outbound HTTP
+# checks, so the agent firewall is disabled to allow reaching arbitrary URLs.
+features:
+  dangerously-disable-sandbox-agent: "Read-only link checker must reach arbitrary curated URLs; no secrets or write access are exposed."
+sandbox:
+  agent: false
 tools:
-  bash: ["curl", "grep", "sort", "uniq", "cat"]
+  bash: [":*"]
 safe-outputs:
   create-issue:
     title-prefix: "[link-check] "
