@@ -150,6 +150,8 @@ This repository collects official documentation, use case scenarios, demo videos
   Host plugin marketplaces in private GitHub / GitHub Enterprise repositories to distribute organization-approved skills, runbooks, and MCP tools across every SRE Agent, with OAuth / PAT / GitHub App authentication and version pinning at install time
 - **[My Journey with Azure SRE Agent](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/my-journey-with-azure-sre-agent/4523519)**  
   A practitioner's walkthrough of adopting Azure SRE Agent to automate operational toil, reduce MTTR, and bridge the gap between observability signals and human decision-making
+- **[Who's Calling Your Service: Designing for Humans and Agents at the Same Time](https://techcommunity.microsoft.com/blog/appsonazureblog/whos-calling-your-service-designing-for-humans-and-agents-at-the-same-time/4523716)**  
+  Architectural guidance on building services that accommodate both human users and autonomous agents — covering authentication patterns, rate-limiting strategies, and API design considerations for the agentic era
 
 ## 🛠️ Resource Definitions
 

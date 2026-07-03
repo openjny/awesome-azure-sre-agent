@@ -157,6 +157,8 @@
   プラグインマーケットプレイスをプライベート GitHub / GitHub Enterprise リポジトリでホストし、組織で承認したスキル・ランブック・MCP ツールを全 SRE Agent に配布する仕組み。OAuth / PAT / GitHub App 認証とインストール時のバージョン固定に対応
 - **[My Journey with Azure SRE Agent](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/my-journey-with-azure-sre-agent/4523519)**  
   Azure SRE Agent を導入して運用トイルの自動化・MTTR 短縮・オブザーバビリティシグナルと意思決定の橋渡しを実現した実践者レポート
+- **[Who's Calling Your Service: Designing for Humans and Agents at the Same Time](https://techcommunity.microsoft.com/blog/appsonazureblog/whos-calling-your-service-designing-for-humans-and-agents-at-the-same-time/4523716)**  
+  人間ユーザーと自律エージェントの双方を受け入れるサービスを設計するためのアーキテクチャガイダンス。認証パターン・レート制限戦略・エージェンティック時代の API 設計を解説
 
 ## 🛠️ リソース定義
 
