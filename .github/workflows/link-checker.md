@@ -46,9 +46,11 @@ find broken links in the two top-level README files.
    Deduplicate the list so each unique URL is checked only once.
 3. For each unique URL, send an HTTP request (prefer `curl -sSIL --max-time 20`, following
    redirects) and record the final status code.
-4. Treat a link as **broken** when the final status is `4xx` or `5xx`, when the request
-   times out, or when the host cannot be resolved. Treat `2xx` and `3xx` that resolve to a
-   `2xx` as healthy. Some hosts block automated `HEAD` requests — if a `HEAD` fails, retry
+4. Treat a link as **broken** when the **final** status (after following redirects) is `4xx`
+   or `5xx`, when the request times out, when a redirect chain loops or exceeds curl's default
+   redirect limit, or when the host cannot be resolved. A redirect that ultimately lands on a
+   `2xx` is healthy; a redirect that ultimately lands on a `4xx`/`5xx` is broken. Some hosts
+   block automated `HEAD` requests — if a `HEAD` fails, retry
    once with `curl -sSL -o /dev/null -w "%{http_code}" --max-time 20` (a `GET`) before
    concluding the link is broken, to avoid false positives.
 
