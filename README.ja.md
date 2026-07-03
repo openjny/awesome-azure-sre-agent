@@ -153,8 +153,10 @@
   Global / Agent / Thread スコープごとに allow / ask / deny ルールを設定できるグローバルなツールアクセスポリシーと、ツール呼び出しの実パラメータを見てブロック・書き換え・リダイレクトを行える Command / Prompt Hooks を解説
 - **[Bring Your Own GitHub App: Connecting Azure SRE Agent to Enterprise Repositories](https://techcommunity.microsoft.com/blog/appsonazureblog/bring-your-own-github-app-connecting-azure-sre-agent-to-enterprise-repositories/4524673)**  
   GitHub Enterprise Cloud (`*.ghe.com`) および github.com 向けに、独自の GitHub App を持ち込んで認証を行うファーストクラスの方式。秘密鍵は Azure Key Vault に格納し、エージェントのマネージド ID がランタイムに短命のインストールトークンを発行する
-- **[Private Plugins with Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/private-plugins-with-azure-sre-agent/4523763)**  
+- **[Private Plugins with Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/private-plugins-with-azure-sre-agent/4523763)**
   プラグインマーケットプレイスをプライベート GitHub / GitHub Enterprise リポジトリでホストし、組織で承認したスキル・ランブック・MCP ツールを全 SRE Agent に配布する仕組み。OAuth / PAT / GitHub App 認証とインストール時のバージョン固定に対応
+- **[My Journey with Azure SRE Agent](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/my-journey-with-azure-sre-agent/4523519)**
+  Azure SRE Agent を導入して運用トイルの自動化・MTTR 短縮・オブザーバビリティシグナルと意思決定の橋渡しを実現した実践者レポート
 
 ## 🛠️ リソース定義
 
