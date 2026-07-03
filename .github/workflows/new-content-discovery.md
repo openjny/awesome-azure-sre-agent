@@ -13,7 +13,7 @@ engine: copilot
 # allowlist is impractical. This workflow only reads public web pages, so the
 # agent firewall is disabled.
 features:
-  dangerously-disable-sandbox-agent: "Content-discovery agent must search/fetch arbitrary public web pages; no secrets are exposed."
+  dangerously-disable-sandbox-agent: "Content-discovery agent must search/fetch arbitrary public web pages; no secrets are exposed. Write permissions are scoped to adding newly discovered content to README files via a pull request."
 sandbox:
   agent: false
 tools:

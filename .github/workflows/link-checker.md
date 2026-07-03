@@ -14,7 +14,7 @@ engine: copilot
 # workflow only performs outbound HTTP checks, so the agent firewall is disabled
 # to allow reaching arbitrary URLs.
 features:
-  dangerously-disable-sandbox-agent: "Link checker must reach arbitrary curated URLs to verify them; no secrets are exposed."
+  dangerously-disable-sandbox-agent: "Link checker must reach arbitrary curated URLs to verify them; no secrets are exposed. Write permissions are scoped to removing broken links from README files via a pull request."
 sandbox:
   agent: false
 tools:
