@@ -61,8 +61,8 @@ Concretely this means:
 - When the workflow was triggered by a `pull_request` and there are findings, post a single
   concise review **comment** on the pull request describing exactly which links are out of
   sync and what the contributor should do.
-- When triggered on a schedule or manually (no PR context) and there are findings, create a
-  single GitHub issue titled `README.md and README.ja.md are out of sync` with the same
-  details, grouped under the three headings above.
+- When triggered manually (no PR context) and there are findings, create a single GitHub issue
+  titled `README.md and README.ja.md are out of sync` with the same details, grouped under the
+  three headings above.
 
 Do not edit any files. Report findings only.
