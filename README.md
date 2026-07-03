@@ -146,9 +146,9 @@ This repository collects official documentation, use case scenarios, demo videos
   Global tool access policies with allow / ask / deny rules at Global / Agent / Thread scope, plus Command and Prompt Hooks that run before a tool call to block, rewrite, or redirect it based on the actual invocation parameters
 - **[Bring Your Own GitHub App: Connecting Azure SRE Agent to Enterprise Repositories](https://techcommunity.microsoft.com/blog/appsonazureblog/bring-your-own-github-app-connecting-azure-sre-agent-to-enterprise-repositories/4524673)**  
   First-class BYO GitHub App authentication for GitHub Enterprise Cloud (`*.ghe.com`) and github.com. The App's private key stays in Azure Key Vault; the agent's managed identity mints short-lived installation tokens at runtime
-- **[Private Plugins with Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/private-plugins-with-azure-sre-agent/4523763)**
+- **[Private Plugins with Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/private-plugins-with-azure-sre-agent/4523763)**  
   Host plugin marketplaces in private GitHub / GitHub Enterprise repositories to distribute organization-approved skills, runbooks, and MCP tools across every SRE Agent, with OAuth / PAT / GitHub App authentication and version pinning at install time
-- **[My Journey with Azure SRE Agent](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/my-journey-with-azure-sre-agent/4523519)**
+- **[My Journey with Azure SRE Agent](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/my-journey-with-azure-sre-agent/4523519)**  
   A practitioner's walkthrough of adopting Azure SRE Agent to automate operational toil, reduce MTTR, and bridge the gap between observability signals and human decision-making
 
 ## 🛠️ Resource Definitions
