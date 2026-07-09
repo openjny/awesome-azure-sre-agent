@@ -126,6 +126,8 @@ This repository collects official documentation, use case scenarios, demo videos
   Official GA announcement (March 2026) covering the capabilities, integrations, and governance model available at general availability
 - **[Context Engineering Lessons from Building Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/context-engineering-lessons-from-building-azure-sre-agent/4481200/)**  
   Lessons in context engineering from the SRE Agent development team covering tool design, multi-agent, code execution, and compaction
+- **[A Paradigm Shift in Cloud Operations with Azure SRE Agent](https://techcommunity.microsoft.com/blog/appsonazureblog/a-paradigm-shift-in-cloud-operations-with-azure-sre-agent/4533244)**  
+  Thought-leadership overview of how Azure SRE Agent moves cloud operations from reactive, manual troubleshooting toward autonomous, AI-driven reliability management — covering incident investigation, root cause analysis, safe automated remediation, and the shift "from toil to trust"
 - **[Reactive Incident Response with Azure SRE Agent: From Alert to Resolution in Minutes](https://techcommunity.microsoft.com/blog/azurearchitectureblog/reactive-incident-response-with-azure-sre-agent-from-alert-to-resolution-in-minu/4492938)**  
   Full flow demo from alert firing to autonomous investigation, approval-based remediation, and recovery verification for 2 scenarios: SQL connection failure and VM CPU spike. Also covers custom IRP procedure writing and setup
 - **[Azure SRE Agent Architecture and Creation: Practical Benefits for SAP on Azure Customers](https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/azure-sre-agent-architecture-and-creation-practical-benefits-for-sap-on-azure-cu/4497625)**  
